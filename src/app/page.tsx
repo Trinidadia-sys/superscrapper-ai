@@ -261,14 +261,34 @@ export default function Home() {
                     initial={{ y: 20, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.6, delay: 0.6 }}
-                    className="flex justify-center mt-8"
+                    className="flex justify-center mt-8 px-4"
                   >
                     <Link
                       href="/history"
-                      className="flex items-center gap-3 px-10 py-4 glass hover-lift border border-white/20 rounded-full text-base tracking-wide text-gray-300 hover:text-white transition-colors"
+                      className="flex items-center gap-3 px-6 md:px-10 py-4 glass hover-lift border border-white/20 rounded-full text-sm md:text-base tracking-wide text-gray-300 hover:text-white transition-colors"
                     >
-                      <BarChart3 className="w-5 h-5 text-purple-400" />
-                      View Generation History
+                      <BarChart3 className="w-4 h-4 md:w-5 md:h-5 text-purple-400" />
+                      <span className="hidden sm:inline">View Generation History</span>
+                      <span className="sm:hidden">History</span>
+                    </Link>
+                  </motion.div>
+                )}
+
+                {/* Sign In Prompt for non-authenticated users */}
+                {!user && (
+                  <motion.div
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 0.6 }}
+                    className="flex justify-center mt-8 px-4"
+                  >
+                    <Link
+                      href="/auth/signin"
+                      className="flex items-center gap-3 px-6 md:px-10 py-4 glass hover-lift border border-white/20 rounded-full text-sm md:text-base tracking-wide text-gray-300 hover:text-white transition-colors"
+                    >
+                      <BarChart3 className="w-4 h-4 md:w-5 md:h-5 text-purple-400" />
+                      <span className="hidden sm:inline">Sign In to View History</span>
+                      <span className="sm:hidden">Sign In</span>
                     </Link>
                   </motion.div>
                 )}
