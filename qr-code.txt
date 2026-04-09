@@ -1,0 +1,51 @@
+SuperScrapperAI Mobile Access
+============================
+
+Network URL: http://10.20.9.101:3000
+
+Scan this QR code to access the app on your mobile device:
+
+    ############################
+    ##                          ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##                          ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##  ##  ##  ##  ##  ##  ##  ##
+    ##                          ##
+    ############################
+
+Mobile Features:
+- Responsive design for all screen sizes
+- Touch-optimized buttons and navigation
+- Mobile-friendly forms and tables
+- Optimized performance for mobile devices
+- Full functionality on mobile browsers
+
+Instructions:
+1. Open your phone's camera app
+2. Point it at the QR code above
+3. Tap the link that appears
+4. Test the mobile experience
+
+Your IP: 10.20.9.101
+Local Network: http://10.20.9.101:3000

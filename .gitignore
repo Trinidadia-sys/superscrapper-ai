@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# QR code files
+*.png
+qr-code*.html
+generate-qr*.js
+
+# deployment scripts
+deploy*.js
