@@ -227,14 +227,9 @@ export default function Home() {
                 </motion.div>
 
                 {/* Lead Generation Form */}
-                <motion.div
-                  initial={{ y: 20, opacity: 0 }}
-                  animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.6, delay: 0.2 }}
-                  className="w-full max-w-5xl mx-auto"
-                >
+                <div className="w-full max-w-5xl mx-auto">
                   <LeadGenerationForm onSubmit={handleLeadGeneration} />
-                </motion.div>
+                </div>
 
                 {/* Features */}
                 <motion.div

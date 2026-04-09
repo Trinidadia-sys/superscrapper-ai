@@ -18,8 +18,13 @@ export function LeadGenerationForm({ onSubmit }: LeadGenerationFormProps) {
     if (!niche || !location) return;
     
     setIsSubmitting(true);
-    await onSubmit({ niche, location });
-    setIsSubmitting(false);
+    try {
+      await onSubmit({ niche, location });
+    } catch (error) {
+      console.error('Form submission error:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const popularNiches = [
@@ -34,7 +39,10 @@ export function LeadGenerationForm({ onSubmit }: LeadGenerationFormProps) {
 
   return (
     <motion.div
-      initial={{ scale: 0.95, opacity: 0 }}
+      initial={{ y: 20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6 }}
+      className="glass p-8 mobile-spacing"
     >
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="grid md:grid-cols-2 gap-6 mobile-grid">

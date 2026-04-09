@@ -1,0 +1,8 @@
+# GitHub Deployment Commands
+# After creating repository at https://github.com/new
+
+git remote add origin https://github.com/Trinidadia-sys/superscrapper-ai.git
+git branch -M main
+git push -u origin main
+
+# Repository: https://github.com/Trinidadia-sys/superscrapper-ai
