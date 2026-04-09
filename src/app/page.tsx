@@ -5,8 +5,6 @@ import { motion } from 'framer-motion';
 import { Sparkles, Search, Zap, Target, BarChart3, Mail } from 'lucide-react';
 import Link from 'next/link';
 import { LeadGenerationForm } from '@/components/LeadGenerationForm';
-import { TestForm } from '@/components/TestForm';
-import { SimpleTest } from '@/components/SimpleTest';
 import { ProcessingScreen } from '@/components/ProcessingScreen';
 import { ResultsDashboard } from '@/components/ResultsDashboard';
 import { UserMenu } from '@/components/UserMenu';
@@ -19,9 +17,6 @@ export default function Home() {
   const [processingState, setProcessingState] = useState<ProcessingState | null>(null);
   const [currentView, setCurrentView] = useState<'home' | 'processing' | 'results'>('home');
   const { user } = useAuth();
-
-  // Debug: Log when page renders and user state
-  console.log('Home page rendering, user:', !!user, 'currentView:', currentView);
 
   const handleLeadGeneration = async (request: { niche: string; location: string }) => {
     setCurrentView('processing');
@@ -233,7 +228,7 @@ export default function Home() {
 
                 {/* Lead Generation Form */}
                 <div className="w-full max-w-5xl mx-auto">
-                  <SimpleTest />
+                  <LeadGenerationForm onSubmit={handleLeadGeneration} />
                 </div>
 
                 {/* Features */}
