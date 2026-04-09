@@ -104,7 +104,7 @@ export function LeadGenerationForm({ onSubmit }: LeadGenerationFormProps) {
         <button
           type="submit"
           disabled={isSubmitting || !niche || !location}
-          className="w-full md:w-auto px-8 py-4 gradient-bg text-white font-semibold rounded-lg hover-lift disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 min-h-[48px]"
+          className="w-full md:w-auto px-8 py-4 gradient-bg text-white font-semibold rounded-lg hover-lift disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 min-h-[48px] mx-auto block"
         >
           {isSubmitting ? (
             <>
