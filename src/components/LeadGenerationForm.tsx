@@ -13,6 +13,9 @@ export function LeadGenerationForm({ onSubmit }: LeadGenerationFormProps) {
   const [location, setLocation] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  // Debug: Log when component renders
+  console.log('LeadGenerationForm rendering...');
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!niche || !location) return;
